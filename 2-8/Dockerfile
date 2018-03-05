@@ -64,5 +64,5 @@ RUN YARN_VERSION=$(curl -sSL --compressed https://yarnpkg.com/latest-version) \
   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz \
   && yarn global add ionic cordova
 
-RUN apt-get update && apt-get install -y libgconf-2-4 libnss3 chromium libatk-bridge2.0-0 libgtk-3-0 libgtk-3-dev
+RUN apt-get update && apt-get install -y libgconf-2-4 libnss3 chromium libatk-bridge2.0-0 libgtk-3-0 libgtk-3-dev ghostscript
 
